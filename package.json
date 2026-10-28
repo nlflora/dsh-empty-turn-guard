@@ -1,0 +1,52 @@
+{
+  "name": "dsh-empty-turn-guard",
+  "version": "0.1.0",
+  "description": "Recover a DeepSeek Harness turn that ended with reasoning only — no text, no tool call — by steering the same turn one more step. Structure-only detection, no judge model.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "test.mjs",
+    "test-integration.mjs"
+  ],
+  "scripts": {
+    "check": "node --check index.js",
+    "test": "node test.mjs && node test-integration.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-llm": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-llm": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.1"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "agent",
+    "turn",
+    "recovery",
+    "reasoning"
+  ],
+  "license": "MIT"
+}

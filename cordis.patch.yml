@@ -1,0 +1,7 @@
+# dsh bundle patch：把这个插件插进 profile 的层栈。
+#
+# 只写 id + name，不带 config、不带 !!js 表达式 —— 这样市场可以热挂载，
+# 不需要重启 profile。具体配置放在 profile 自己的 cordis.patch.yml 里覆盖。
+- insert:
+    - id: empty-turn-guard
+      name: 'dsh-empty-turn-guard'
