@@ -4,4 +4,4 @@
 # 不需要重启 profile。具体配置放在 profile 自己的 cordis.patch.yml 里覆盖。
 - insert:
     - id: empty-turn-guard
-      name: 'dsh-empty-turn-guard'
+      name: '@nlflora/dsh-empty-turn-guard'

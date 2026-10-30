@@ -1,5 +1,5 @@
 {
-  "name": "dsh-empty-turn-guard",
+  "name": "@nlflora/dsh-empty-turn-guard",
   "version": "0.1.0",
   "description": "Recover a DeepSeek Harness turn that ended with reasoning only — no text, no tool call — by steering the same turn one more step. Structure-only detection, no judge model.",
   "type": "module",
@@ -55,6 +55,9 @@
   "homepage": "https://github.com/nlflora/dsh-empty-turn-guard#readme",
   "bugs": {
     "url": "https://github.com/nlflora/dsh-empty-turn-guard/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT"
 }

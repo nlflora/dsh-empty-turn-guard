@@ -37,7 +37,7 @@ DSH 看到「没有工具调用、也没有文本」，判定模型已经给出�
 ## 安装
 
 ```sh
-dsh plugin --profile <profile> add dsh-empty-turn-guard
+dsh plugin --profile <profile> add @nlflora/dsh-empty-turn-guard
 ```
 
 本地开发：
