@@ -48,5 +48,13 @@
     "recovery",
     "reasoning"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlflora/dsh-empty-turn-guard.git"
+  },
+  "homepage": "https://github.com/nlflora/dsh-empty-turn-guard#readme",
+  "bugs": {
+    "url": "https://github.com/nlflora/dsh-empty-turn-guard/issues"
+  },
   "license": "MIT"
 }
